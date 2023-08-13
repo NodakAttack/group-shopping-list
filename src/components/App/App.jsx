@@ -4,6 +4,7 @@ import Header from '../Header/Header.jsx'
 import GetItems from '../GetItems/GetItems.jsx'
 
 import './App.css';
+import AddItems from '../AddItems/AddItems.jsx';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <div className="App">
             <Header />
             <main>
+                <AddItems />
                 <GetItems />
             </main>
         </div>
