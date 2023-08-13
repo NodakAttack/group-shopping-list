@@ -1,4 +1,5 @@
 import React, { useState , useEffect} from 'react';
+import './GetItems.css';
 import axios from 'axios';
 
 function GetItems() {
@@ -21,15 +22,18 @@ function GetItems() {
     }, [])
 
     return (
-            <div>
-                {itemList.map(item =>
-                    (<p key={item.name}>
-                        {item.name}
-                        {item.quantity} {item.unit}
-                </p>
-                ))}
-            </div>
+        <div>
+            {itemList.map(item => (
+                <div key={item.name} className="item-container">
+                    <div className="item-info">
+                        <p>{item.name}</p>
+                        <p>
+                            {item.quantity} {item.unit}
+                        </p>
+                    </div>
+                </div>
+            ))}
+        </div>
     );
 }
-
 export default GetItems;
