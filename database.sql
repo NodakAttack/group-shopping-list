@@ -9,7 +9,7 @@ unit varchar(20),
 purchased boolean
 );
 
-INSERT INTO "items" ("name", "quantity", unit, purchased)
+INSERT INTO "items" ("name", "quantity", "unit", "purchased")
 VALUES 
 ('Apples', 5, 'lbs', false),
 ('Bread', 1, 'loaf', false),
