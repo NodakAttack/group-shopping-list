@@ -15,4 +15,4 @@ VALUES
 ('Bread', 1, 'loaf', false),
 ('Milk', 1, 'gallon', false),
 ('Sliced Almonds', 2, 'cups', false),
-('Bananas', 1, 'bunch', True);
+('Bananas', 1, 'bunch', true);
